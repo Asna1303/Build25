@@ -31,3 +31,7 @@
     align-items: center;
     cursor: pointer;
   }
+  .acc-content {
+    color: #ffffff;
+    height: auto;
+  }
