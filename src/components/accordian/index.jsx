@@ -12,6 +12,9 @@ export default function Accordian() {
     function handleMultiSelection(getCurrentId){
        let cpyMultiple=[...multiple];
        const findIndexOfCurrentId=cpyMultiple.indexOf(getCurrentId)
+       if(findIndexOfCurrentId===-1) cpyMultiple.push(getCurrentId)
+       else cpyMultiple.splice(findIndexOfCurrentId,1)
+    setMultiple(cpyMultiple)
     }
 
     return (
@@ -30,9 +33,9 @@ export default function Accordian() {
                                 <span>+</span>
                             </div>
                             {
-                                 selected===dataItem.id ?
+                                 selected===dataItem.id || multiple.indexOf(dataItem.id)!==-1 ? (
                                  <div className="content">{dataItem.answer}</div>
-                                 :null
+                                  ) :null
                             }
                             
                         </div>
