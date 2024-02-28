@@ -10,7 +10,8 @@ export default function Accordian() {
         setSelected(getCurrentId===selected ? null : getCurrentId);
     }
     function handleMultiSelection(getCurrentId){
-        setMultiple(getCurrentId===multiple ? null : getCurrentId);
+       let cpyMultiple=[...multiple];
+       const findIndexOfCurrentId=cpyMultiple.indexOf(getCurrentId)
     }
 
     return (
