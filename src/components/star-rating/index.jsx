@@ -18,6 +18,8 @@ export default function starRating({noOfStars=5}){
       }
 return <div className="star-rating">{
     [...Array(noOfStars)].map((_,index)=>{
+        index += 1;
+
         return <FaStar
         key={index}
         onClick={() => handleClick(index)}
