@@ -20,7 +20,7 @@ return <div className="star-rating">{
     [...Array(noOfStars)].map((_,index)=>{
         return <FaStar
         key={index}
-        onClick={}
+        onClick={() => handleClick(index)}
         onMouseMove={}
         onMouseLeave={}
         size={40}
