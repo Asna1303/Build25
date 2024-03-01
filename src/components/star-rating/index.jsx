@@ -1,7 +1,9 @@
 
 
-export default function starRating(){
-return <div className="star-rating">
+export default function starRating({noOfStars}){
+return <div className="star-rating">{
+    [...Array(noOfStars)]
+}
 
 </div>
 }
