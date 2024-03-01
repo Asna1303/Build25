@@ -24,7 +24,7 @@ return <div className="star-rating">{
         key={index}
         onClick={() => handleClick(index)}
         onMouseMove={() => handleMouseEnter(index)}
-        onMouseLeave={}
+        onMouseLeave={() => handleMouseLeave()}
         size={40}
         />
     })
