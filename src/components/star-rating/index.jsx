@@ -23,7 +23,7 @@ return <div className="star-rating">{
         return <FaStar
         key={index}
         onClick={() => handleClick(index)}
-        onMouseMove={}
+        onMouseMove={() => handleMouseEnter(index)}
         onMouseLeave={}
         size={40}
         />
