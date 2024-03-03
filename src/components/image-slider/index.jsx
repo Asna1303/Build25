@@ -7,9 +7,10 @@ export default function ImageSlider({url,limit}){
     const[errorMsg,setErrorMsg]=useState(null);
     async function fetchImages(getUrl){
         try{
-
+const response=await fetch(getUrl);
+const data=await response.json();
         }catch(e){
-
+setErrorMsg(e.message);
         }
 
     }
