@@ -5,7 +5,12 @@ export default function ImageSlider({url,limit}){
     const[images,setImages]=useState([]);
     const[currentSlide,setCurrentSlide]=useState(0);
     async function fetchImages(getUrl){
-        
+        try{
+
+        }catch(e){
+            
+        }
+
     }
 
     useEffect(() => {
