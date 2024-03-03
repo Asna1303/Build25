@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState,useEffect } from "react";
 
 
 export default function ImageSlider({url,limit}){
@@ -8,11 +8,13 @@ export default function ImageSlider({url,limit}){
     const[loading,setLoading]=useState(false);
     async function fetchImages(getUrl){
         try{
+            setLoading(true);
 const response=await fetch(getUrl);
 const data=await response.json();
 
 if(data){
     setImages(data);
+    setLoading(false);
 }
         }catch(e){
 setErrorMsg(e.message);
@@ -23,6 +25,12 @@ setErrorMsg(e.message);
     useEffect(() => {
         if(url!=='') fetchImages(url)
         }, [url])
+    if(loading){
+        return<div>Loading data! Please wait!</div>
+    } 
+    if(errorMsg!==null){
+        return <div>Error occured! {errorMsg}</div>
+    }
 
     return <div className="container"></div>;
 }
