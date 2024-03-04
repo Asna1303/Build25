@@ -40,6 +40,7 @@ setErrorMsg(e.message);
             <img
             key={imageItem.id}
             alt={imageItem.download_url}
+            src={imageItem.download_url}
             />
         ))
         : null
