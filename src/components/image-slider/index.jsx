@@ -48,7 +48,20 @@ setErrorMsg(e.message);
     }
     <BsArrowRightCircleFill className="arrow arrow-right"/>
     <span className="circle-indicators">
-
+    {images && images.length
+          ? images.map((_, index) => (
+            <button
+              key={index}
+              className={
+                currentSlide === index
+                  ? "current-indicator"
+                  : "current-indicator inactive-indicator"
+              }
+              onClick={() => setCurrentSlide(index)}
+            ></button>
+          ))
+        : null}
+    
     </span>
     </div>;
 }
