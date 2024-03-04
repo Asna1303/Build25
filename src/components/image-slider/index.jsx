@@ -41,9 +41,11 @@ setErrorMsg(e.message);
             key={imageItem.id}
             alt={imageItem.download_url}
             src={imageItem.download_url}
+            className="current-image"
             />
         ))
         : null
     }
+    <BsArrowRightCircleFill />
     </div>;
 }
