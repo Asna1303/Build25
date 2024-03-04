@@ -39,7 +39,7 @@ setErrorMsg(e.message);
         images.map(imageItem=>(
             <img
             key={imageItem.id}
-            
+            alt={imageItem.download_url}
             />
         ))
         : null
