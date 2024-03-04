@@ -46,6 +46,9 @@ setErrorMsg(e.message);
         ))
         : null
     }
-    <BsArrowRightCircleFill />
+    <BsArrowRightCircleFill className="arrow arrow-right"/>
+    <span className="circle-indicators">
+
+    </span>
     </div>;
 }
