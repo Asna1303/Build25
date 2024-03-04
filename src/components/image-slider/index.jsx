@@ -32,5 +32,17 @@ setErrorMsg(e.message);
         return <div>Error occured! {errorMsg}</div>
     }
 
-    return <div className="container"></div>;
+    return <div className="container">
+    <BsArrowLeftCircleFill className="arrow arrow-left"/>
+    {
+        images && images.length ?
+        images.map(imageItem=>(
+            <img
+            key={imageItem.id}
+            
+            />
+        ))
+        : null
+    }
+    </div>;
 }
