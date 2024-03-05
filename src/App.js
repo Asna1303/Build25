@@ -7,7 +7,7 @@ import ImageSlider from './components/image-slider';
 function App() {
   return (
     <div className="App">
-      {/*Accordian component*/}
+      
       <Accordian/>
       <RandomColor/>
       <StarRating/>
