@@ -1,6 +1,6 @@
 export default function LoadMoreData() {
 
-    return <div>
-        
+    return <div className="container">
+
     </div>
 }
