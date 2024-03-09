@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './styles.css';
 
 export default function LoadMoreData() {
     const [loading, setLoading] = useState(false);
@@ -8,7 +9,7 @@ async function fetchProducts(){
 try{
 
 }catch(e){
-    
+
 }
 }
 
