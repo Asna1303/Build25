@@ -28,6 +28,9 @@ setLoading(false);
 fetchProducts()
     },[])
 
+    if (loading) {
+        return <div>Loading data ! Please wait.</div>;
+      }
     return <div className="container">
 
     </div>
