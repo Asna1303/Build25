@@ -5,6 +5,11 @@ export default function LoadMoreData() {
     const[products,setProducts]=useState([]);
     const [count,setCount]=useState(0);
 
+
+    useEffect(()=>{
+fetchProducts()
+    },[])
+
     return <div className="container">
 
     </div>
