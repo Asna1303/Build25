@@ -32,6 +32,8 @@ fetchProducts()
         return <div>Loading data ! Please wait.</div>;
       }
     return <div className="container">
-
+<div>
+    
+</div>
     </div>
 }
