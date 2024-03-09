@@ -32,8 +32,18 @@ fetchProducts()
         return <div>Loading data ! Please wait.</div>;
       }
     return <div className="container">
-<div>
+<div>{
+     {products && products.length
+        ? products.map((item) => (
+            <div className="product" key={item.id}>
+              <img src={item.thumbnail} alt={item.title} />
+              <p>{item.title}</p>
+            </div>
+          ))
+        : null}
     
+    }
+
 </div>
     </div>
 }
