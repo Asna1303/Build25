@@ -20,6 +20,7 @@ const response = await fetch(`https://dummyjson.com/products?limit=20&skip=${
   console.log(result);
 }catch(e){
 console.log(e);
+setLoading(false);
 }
 }
 
